@@ -1,6 +1,6 @@
-package com.henry.rentoria.repository
+package com.henrioreo.rentoria.repository
 
-import com.henry.rentoria.model.Property
+import com.henrioreo.rentoria.model.Property
 import org.springframework.data.mongodb.repository.MongoRepository
 import org.springframework.stereotype.Repository
 import java.util.Optional

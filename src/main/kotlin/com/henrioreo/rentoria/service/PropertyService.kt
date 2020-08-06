@@ -1,7 +1,7 @@
-package com.henry.rentoria.service
+package com.henrioreo.rentoria.service
 
-import com.henry.rentoria.model.Property
-import com.henry.rentoria.repository.PropertyRepository
+import com.henrioreo.rentoria.model.Property
+import com.henrioreo.rentoria.repository.PropertyRepository
 import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.stereotype.Service
 import java.util.Optional
