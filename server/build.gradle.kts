@@ -1,4 +1,6 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import org.gradle.api.tasks.testing.logging.TestExceptionFormat
+import org.gradle.api.tasks.testing.logging.TestLogEvent
 
 plugins {
 	id("org.springframework.boot") version "2.3.2.RELEASE"
@@ -41,5 +43,25 @@ tasks.withType<KotlinCompile> {
 	kotlinOptions {
 		freeCompilerArgs = listOf("-Xjsr305=strict")
 		jvmTarget = "11"
+	}
+}
+
+tasks.withType<Test> {
+	testLogging {
+		exceptionFormat = TestExceptionFormat.FULL
+		events = hashSetOf(
+				TestLogEvent.PASSED,
+				TestLogEvent.FAILED,
+				TestLogEvent.SKIPPED)
+		showExceptions = true
+		showCauses = true
+		showStackTraces = true
+
+		afterSuite(KotlinClosure2<TestDescriptor, TestResult, Any>({ desc, result ->
+			 if (desc.parent == null) { // will match the outermost suite
+				val output = "${result.resultType}: ${result.testCount} tests, ${result.successfulTestCount} successes, ${result.failedTestCount} failures, ${result.skippedTestCount} skipped"
+				println("\n--\n$output")
+			}
+		}))
 	}
 }

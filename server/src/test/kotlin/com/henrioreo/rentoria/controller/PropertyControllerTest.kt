@@ -1,6 +1,5 @@
 package com.henrioreo.rentoria.controller
 
-//import mockk.mockk
 import com.henrioreo.rentoria.model.Property
 import com.henrioreo.rentoria.service.PropertyService
 import io.mockk.clearAllMocks
