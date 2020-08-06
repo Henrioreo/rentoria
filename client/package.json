@@ -1,0 +1,19 @@
+{
+  "name": "henrioreo.rentoria",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Henrioreo/rentoria.git"
+  },
+  "author": "jianlihenry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Henrioreo/rentoria/issues"
+  },
+  "homepage": "https://github.com/Henrioreo/rentoria#readme"
+}
