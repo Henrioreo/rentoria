@@ -1,3 +1,3 @@
-.gradle
-server/.idea
-build
+*/.gradle
+.idea
+*/build
