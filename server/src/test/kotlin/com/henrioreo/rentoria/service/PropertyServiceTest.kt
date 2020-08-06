@@ -1,6 +1,6 @@
-package com.henry.rentoria.service
+package com.henrioreo.rentoria.service
 
-import com.henry.rentoria.repository.PropertyRepository
+import com.henrioreo.rentoria.repository.PropertyRepository
 import io.mockk.clearAllMocks
 import io.mockk.mockk
 import org.junit.jupiter.api.BeforeEach

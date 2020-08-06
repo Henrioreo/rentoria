@@ -1,4 +1,4 @@
-package com.henry.rentoria.model
+package com.henrioreo.rentoria.model
 
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document

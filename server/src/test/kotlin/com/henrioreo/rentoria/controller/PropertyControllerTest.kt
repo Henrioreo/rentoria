@@ -1,8 +1,7 @@
-package com.henry.rentoria.controller
+package com.henrioreo.rentoria.controller
 
-//import mockk.mockk
-import com.henry.rentoria.model.Property
-import com.henry.rentoria.service.PropertyService
+import com.henrioreo.rentoria.model.Property
+import com.henrioreo.rentoria.service.PropertyService
 import io.mockk.clearAllMocks
 import io.mockk.every
 import io.mockk.mockk
